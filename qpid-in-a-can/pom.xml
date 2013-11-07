@@ -3,7 +3,7 @@
 
     <groupId>com.confluex</groupId>
     <artifactId>qpid-in-a-can</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Qpid in a Can</name>
     <url>https://github.com/Confluex/qpid-in-a-can</url>
