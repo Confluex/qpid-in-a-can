@@ -1,0 +1,19 @@
+{
+    "name" : "Test Broker",
+    "defaultVirtualHost" : "default",
+    "modelVersion" : "1.0",
+    "storeVersion" : 1,
+    "authenticationproviders" : [ {
+        "name" : "testing",
+        "type" : "Testing"
+    } ],
+    "ports" : [ {
+        "authenticationProvider" : "testing",
+        "name" : "AMQP",
+        "port" : "35672"
+    } ],
+    "virtualhosts" : [ {
+        "name" : "default",
+        "storeType" : "MEMORY"
+    } ]
+}

@@ -1,0 +1,21 @@
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+">
+    <bean id="embeddedQpidAmqpBroker" class="com.confluex.test.amqp.QpidBrokerBean"
+          init-method="init"
+          p:initialConfig="qpid/initial-config.json">
+        <property name="broker">
+            <bean class="org.apache.qpid.server.Broker" />
+        </property>
+        <property name="configProperties">
+            <util:map>
+            </util:map>
+        </property>
+    </bean>
+</beans>
